@@ -1,0 +1,14 @@
+{
+  "name": "lab7-comments-api",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №7: REST API комментариев на Express и SQLite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  }
+}

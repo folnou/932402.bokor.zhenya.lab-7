@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Комментарии к посту</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Комментарии к посту</h1>
+
+    <div class="filter">
+      <label for="filter-post">Номер поста (пусто — все комментарии)</label>
+      <input id="filter-post" type="number" min="1" value="5">
+    </div>
+
+    <form id="comment-form" class="form">
+      <label for="post-id">Номер поста</label>
+      <input id="post-id" type="number" min="1" value="5" required>
+
+      <label for="author">Автор</label>
+      <input id="author" type="text" maxlength="100">
+
+      <label for="content">Комментарий</label>
+      <textarea id="content" rows="3"></textarea>
+
+      <button type="submit">Отправить</button>
+      <p id="error" class="error" role="alert"></p>
+    </form>
+
+    <ul id="list" class="list"></ul>
+  </main>
+</body>
+</html>

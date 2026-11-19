@@ -1,0 +1,79 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f4f5f7;
+  color: #1f2933;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.filter,
+.form {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+}
+
+button {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover { background: #1d4ed8; }
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list li {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.list header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #616e7c;
+}
+
+.list .delete {
+  background: #fff;
+  color: #b91c1c;
+  border-color: #b91c1c;
+  padding: 0.2rem 0.6rem;
+}
+
+.error {
+  min-height: 1.5em;
+  margin: 0;
+  color: #b91c1c;
+}
